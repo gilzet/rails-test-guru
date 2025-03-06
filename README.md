@@ -1,24 +1,22 @@
-# README
+<h1 align="center">TestGuru - платформа тестов</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center">
 
-Things you may want to cover:
+  <br>
+  <em>TestGuru это платформа для создания и прохождения тестов 
+    <br> построенная на web-фреймворке: Ruby On Rails </em>
+  <br>
+  <br>
+</p>
 
-* Ruby version
+### Основное предназначение проекта
 
-* System dependencies
+- Создание тестов и управление ими
+- Выполнение тестов
+- Публикация результатов в соц. сети
 
-* Configuration
+### Проект будет иметь:
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Аутентификацию
+- Авторизацию(базовое разграничение прав доступа)
+- Две роли: участники тестов и администраторы
