@@ -22,5 +22,11 @@ module TestGuru
     # in config/environments, which are processed later.
 
     config.time_zone = "Moscow"
+
+    # Permitted locales available for the application
+    config.i18n.available_locales = [:en, :ru]
+
+    # Default locale for the application
+    config.i18n.default_locale = :ru
   end
 end
