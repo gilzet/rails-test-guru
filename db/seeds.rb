@@ -84,3 +84,15 @@ answers = [
 answers.each do |answer|
   Answer.find_or_create_by!(answer)
 end
+
+test_passages = [
+  { test_progress: 0, user_id: users[0].id, test_id: tests[0].id },
+  { test_progress: 1, user_id: users[0].id, test_id: tests[2].id },
+  { test_progress: 3, user_id: users[1].id, test_id: tests[2].id },
+  { test_progress: 2, user_id: users[1].id, test_id: tests[3].id },
+  { test_progress: 3, user_id: users[2].id, test_id: tests[1].id },
+  { test_progress: 3, user_id: users[2].id, test_id: tests[4].id }
+]
+test_passages.each do |test_passage|
+  TestPassages.find_or_create_by!(test_passage)
+end
