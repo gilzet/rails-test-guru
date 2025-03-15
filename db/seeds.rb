@@ -94,5 +94,5 @@ test_passages = [
   { test_progress: 3, user_id: users[2].id, test_id: tests[4].id }
 ]
 test_passages.each do |test_passage|
-  TestPassages.find_or_create_by!(test_passage)
+  TestPassage.find_or_create_by!(test_passage)
 end
