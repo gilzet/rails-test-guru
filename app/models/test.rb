@@ -2,7 +2,7 @@
 
 class Test < ApplicationRecord
   def self.names_by_category(title)
-    Test.joins('INNER JOIN "categories" ON "tests"."category_id" = "categories"."id"')
+    Test.joins('JOIN "categories" ON "tests"."category_id" = "categories"."id"')
         .where(categories: { title: title })
         .order(created_at: :desc)
         .pluck(:title)

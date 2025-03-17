@@ -2,7 +2,7 @@
 
 class User < ApplicationRecord
   def tests_by_level(level)
-    Test.joins('INNER JOIN "test_passages" ON "tests"."id" = "test_passages"."test_id"')
+    Test.joins('JOIN "test_passages" ON "tests"."id" = "test_passages"."test_id"')
         .where(level: level)
         .where(test_passages: { user_id: id })
         .pluck(:title)
