@@ -5,6 +5,7 @@ class Test < ApplicationRecord
   has_many :test_passages
   has_many :users, through: :test_passages
   belongs_to :category
+  belongs_to :user, foreign_key: :author_id
 
   def self.names_by_category(title)
     Test.joins(:category)
