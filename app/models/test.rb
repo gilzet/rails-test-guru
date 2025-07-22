@@ -9,9 +9,9 @@ class Test < ApplicationRecord
   has_many :users, through: :test_passages
 
   def self.names_by_category(title)
-    Test.joins(:category)
-        .where(categories: { title: title })
-        .order(created_at: :desc)
-        .pluck(:title)
+    joins(:category)
+      .where(categories: { title: title })
+      .order(created_at: :desc)
+      .pluck(:title)
   end
 end
