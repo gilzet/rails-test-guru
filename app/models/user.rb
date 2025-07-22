@@ -7,6 +7,5 @@ class User < ApplicationRecord
 
   def passage_tests_by_level(level)
     tests.where(level: level)
-         .pluck(:title)
   end
 end
