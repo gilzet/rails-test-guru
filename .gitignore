@@ -44,4 +44,5 @@
 yarn-debug.log*
 .yarn-integrity
 
-.idea
+# Ignore .idea files
+.idea/
